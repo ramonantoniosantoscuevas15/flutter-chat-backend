@@ -83,7 +83,7 @@ const login = async(req,res=response)=>{
 }
 const renewToken = async (req, res = response) =>{
     //const uid uid del ususario
-    const uid= req.id;
+    const uid= req.uid;
     //general un nuevo jwt
     const token= await generalJWT(uid);
     //obtener el usuario por el uid
