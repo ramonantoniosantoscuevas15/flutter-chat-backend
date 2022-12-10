@@ -18,6 +18,7 @@ io.on('connection', (client) => {
       //grabar mensaje
       await grabarMensaje(payload);
       io.to(payload.para).emit('mensaje-personal', payload);
+      
     })
     
     
